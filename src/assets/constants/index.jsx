@@ -38,8 +38,8 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const PROFILE = {
-  name: "Robert Butcher",
-  info: "Full-stack developer with a flair for graphic design.",
+  name: "Syed Aftab",
+  info: "MERN Stack Developer | Building Scalable Web Applications | JavaScript Enthusiast",
 };
 
 export const ABOUT = {
