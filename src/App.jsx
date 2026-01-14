@@ -6,7 +6,8 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Achievements from './components/Achievements';
 import Testimonials from './components/Testimonials';
-  
+import ContactForm from './components/ContactForm';  
+
 const App = () => {
   return (
         <main className='overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased'>
@@ -17,6 +18,7 @@ const App = () => {
           <Skills/>
           <Achievements/>
           <Testimonials/>
+          <ContactForm/>
         </main>
   )
 }
