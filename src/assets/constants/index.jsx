@@ -123,6 +123,17 @@ export const SKILLS = [
     name: "Node.js",
     experience: "2+ years",
   },
+
+  {
+    icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
+    name: "Redis",
+    experience: "1+ year",
+  },
+  {
+    icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
+    name: "PostgreSQL",
+    experience: "1+ year",
+  },
   {
     icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
     name: "PostgreSQL",
