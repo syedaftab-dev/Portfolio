@@ -7,7 +7,7 @@ function Achievements() {
         <h2 className='mb-12 mt-20 text-center text-4xl font-semibold'>Award</h2>
         <div className='mx-auto flex max-w-6xl flex-wrap'>
             <div className='w-full p-2 sm:w-1/2'>
-            <video src="" className='w-full rounded-lg' autoPlay muted loop playsInline>
+            <video className='w-full rounded-lg' autoPlay muted loop playsInline>
                 <source src={video} type="video/mp4" />      
             </video>
             </div>
