@@ -7,6 +7,7 @@ import emailjs from "@emailjs/browser"
 // Toast notifications for success/error messages
 import toast from 'react-hot-toast'
 import { Toaster } from 'react-hot-toast'
+import { motion } from 'framer-motion'
 
 const ContactFrom = () => {
 
@@ -142,7 +143,11 @@ const ContactFrom = () => {
       </h2>
 
       {/* Form submission handled by React */}
-      <form onSubmit={handleSubmit}>
+      <motion.form 
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration:0.8}}
+      onSubmit={handleSubmit}>
 
         {/* NAME FIELD */}
         <div className="mb-4">
@@ -158,7 +163,11 @@ const ContactFrom = () => {
 
           {/* Show error only if it exists */}
           {errors.name && (
-            <p className="text-sm text-pink-700">{errors.name}</p>
+            <motion.p 
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            arial-live="polite"
+            className="text-sm text-pink-700">{errors.name}</motion.p>
           )}
         </div>
 
@@ -175,7 +184,11 @@ const ContactFrom = () => {
           />
 
           {errors.email && (
-            <p className="text-sm text-pink-700">{errors.email}</p>
+            <motion.p 
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            arial-live="polite"
+            className="text-sm text-pink-700">{errors.email}</motion.p>
           )}
         </div>
 
@@ -192,7 +205,11 @@ const ContactFrom = () => {
           />
 
           {errors.message && (
-            <p className="text-sm text-pink-700">{errors.message}</p>
+            <motion.p 
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            arial-live="polite"
+            className="text-sm text-pink-700">{errors.message}</motion.p>
           )}
         </div>
 
@@ -205,7 +222,7 @@ const ContactFrom = () => {
         >
           {isSending ? "sending..." : "Send"}
         </button>
-      </form>
+      </motion.form>
     </div>
   )
 }
