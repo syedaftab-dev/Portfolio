@@ -20,7 +20,7 @@ const itemVariants = {
   hidden: {opacity: 0,y: 0.8},
   visible: {opacity : 1,scale:1 ,transition:{duration: 0.5}}
 }
-j
+
 function Projects() {
   return (
     <div id="projects">
